@@ -2,6 +2,7 @@ package com.itheima.config;
 
 
 import org.springframework.context.annotation.*;
+import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration//定义该类为配置类

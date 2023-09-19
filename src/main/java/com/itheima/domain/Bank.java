@@ -1,6 +1,25 @@
 package com.itheima.domain;
 
 public class Bank {
+    private int id;
+
+    @Override
+    public String toString() {
+        return "Bank{" +
+                "id=" + id +
+                ", account='" + account + '\'' +
+                ", money=" + money +
+                '}';
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     private String account;
     private int money;
 
@@ -31,12 +50,4 @@ public class Bank {
         this.money = money;
     }
 
-    // toString方法
-    @Override
-    public String toString() {
-        return "Bank{" +
-                "account='" + account + '\'' +
-                ", money=" + money +
-                '}';
-    }
 }

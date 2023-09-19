@@ -7,6 +7,7 @@ public class BankForAnnotation {
                 new AnnotationConfigApplicationContext("com.itheima.config");
         BankService bankService = ctx.getBean(BankService.class);
         bankService.transfer("耿泽雨","刘天",500);
+        bankService.in("李郑洋",500);
         ctx.close();
     }
 }

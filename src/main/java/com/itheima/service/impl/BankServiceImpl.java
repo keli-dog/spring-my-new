@@ -24,6 +24,11 @@ public class BankServiceImpl implements BankService {
     }
 
     @Override
+    public void update(Bank bank) {
+        bankDao.update(bank);
+    }
+
+    @Override
     public void in(String account, int money) {
         bankDao.in(account, money);
     }
