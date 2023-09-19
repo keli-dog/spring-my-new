@@ -2,11 +2,13 @@ package com.itheima.dao;
 
 import com.itheima.domain.Bank;
 import org.apache.ibatis.annotations.*;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.util.List;
-
 public interface BankDao {
 
     @Insert("insert into bank(account, money) values(#{account}, #{money})")
@@ -27,5 +29,7 @@ public interface BankDao {
     @Insert("insert into banktransferlog(info,time)values(#{info},now())")
     @Transactional(propagation = Propagation.REQUIRES_NEW)// 开启新事务不加入到事务管理员，不传播
     public void log(String msg);
+
+
 }
 

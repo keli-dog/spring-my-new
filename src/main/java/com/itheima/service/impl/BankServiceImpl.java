@@ -13,7 +13,6 @@ public class BankServiceImpl implements BankService {
     @Autowired
     BankDao bankDao;
 
-
     @Override
     public void save(Bank bank) {
         bankDao.save(bank);

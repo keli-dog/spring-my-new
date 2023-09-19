@@ -4,6 +4,8 @@ import com.itheima.domain.Love;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+import org.springframework.stereotype.Repository;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import java.util.List;
 public interface LoveDao {
