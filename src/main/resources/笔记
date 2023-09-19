@@ -1,0 +1,18 @@
+@Configuration//定义该类为配置类
+@ComponentScan("com.itheima")//包扫描路径
+@PropertySource(value = "classpath:jdbc.properties")//外部属性文件导入
+@Import(jdbcConfig.class)//导入另外的配置类
+@Repository("bookDao")//数据层的bean
+@Service
+@Controller
+@Value("${jdbc.name}")//简单类型依赖注入
+@Autowired//引用类型依赖注入（自动装配）
+@Qualifier("bookDao")//指定注入类名称
+@EnableAspectJAutoProxy//使用@EnableAspectJAutoProxy 开启切面方法通知
+@Component
+@Aspect//自动实现
+@Pointcut("execution(void com.itheima.aop.aoptest.AopTest.test1())")// 切面方法，在一个方法中进行切面
+*表示匹配一个单独独立的任意符号    ..表示匹配连续的任意符号  +（service+）表示匹配该类的子类
+@Before("pt()") 切面方法，要有@Before注解才能切面
+
+AOP通知类型：
