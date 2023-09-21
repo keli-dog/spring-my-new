@@ -15,4 +15,18 @@
 *表示匹配一个单独独立的任意符号    ..表示匹配连续的任意符号  +（service+）表示匹配该类的子类
 @Before("pt()") 切面方法，要有@Before注解才能切面
 
-AOP通知类型：
+    /*@RequestMapping("/test")
+    @ResponseBody
+    public String test(@RequestBody List<String> list) {//接收json格式的数据
+        System.out.println(list);
+        return "test success";
+    }
+
+    @RequestMapping("/date")
+    @ResponseBody
+    public String test(Date date,//日期类型参数接收
+                       @DateTimeFormat(pattern = "yy-MM-dd") Date date1,
+                       @DateTimeFormat(pattern = "yy-MM-dd HH:mm:ss")Date date2) {
+        System.out.println(date+"\n"+date1+"\n"+date2);
+        return "date success";
+    }*/

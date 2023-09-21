@@ -1,5 +1,7 @@
-package com.itheima.config;
+package com.config;
 
+import com.config.SpringConfigs.SpringConfig;
+import com.config.SpringMvcConfigs.SpringMvcConfig;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.filter.CharacterEncodingFilter;

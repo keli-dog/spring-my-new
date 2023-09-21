@@ -1,3 +1,5 @@
+package com.test;
+
 import com.itheima.domain.Love;
 import com.itheima.service.LoveService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -9,7 +11,7 @@ import java.util.List;
 public class JDBCForAnnotation {
     public static void main(String[] args) throws SQLException {
         AnnotationConfigApplicationContext ctx =
-                new AnnotationConfigApplicationContext("com.itheima.config");
+                new AnnotationConfigApplicationContext("com.config");
         //JDBC连接数据库
         DataSource dataSource = ctx.getBean(DataSource.class);
         Connection connection = dataSource.getConnection();

@@ -11,7 +11,7 @@ import java.util.List;
 //@ResponseBody
 @RestController//代替以上俩个注解
 @RequestMapping("/bank")
-public class BankServelt {
+public class BankController {
     @Autowired
     BankService bankService;
 
@@ -19,7 +19,7 @@ public class BankServelt {
     @PostMapping
     public String save(Bank bank) {
         /*AnnotationConfigApplicationContext context =
-                new AnnotationConfigApplicationContext("com.itheima.config");
+                new AnnotationConfigApplicationContext("com.config");
         String[] beanNames = context.getBeanDefinitionNames();
         for (String beanName : beanNames) {
             System.out.println("Bean Name: " + beanName);
@@ -59,23 +59,4 @@ public class BankServelt {
         // 根据ID查询数据
         return bankService.findById(id);
     }
-
-
-    /*@RequestMapping("/test")
-    @ResponseBody
-    public String test(@RequestBody List<String> list) {//接收json格式的数据
-        System.out.println(list);
-        return "test success";
-    }
-
-    @RequestMapping("/date")
-    @ResponseBody
-    public String test(Date date,//日期类型参数接收
-                       @DateTimeFormat(pattern = "yy-MM-dd") Date date1,
-                       @DateTimeFormat(pattern = "yy-MM-dd HH:mm:ss")Date date2) {
-        System.out.println(date+"\n"+date1+"\n"+date2);
-        return "date success";
-    }*/
-
-
 }
