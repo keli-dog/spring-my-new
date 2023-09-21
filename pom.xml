@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>spring-my</artifactId>
+    <artifactId>spring-my-new</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>spring-my-new Maven Webapp</name>
     <url>http://maven.apache.org</url>

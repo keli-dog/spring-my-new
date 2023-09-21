@@ -1,6 +1,6 @@
 <html>
 <head>
-    <meta http-equiv="Refresh" content="2;URL=./pages/books.html">
+    <meta http-equiv="Refresh" content="0;URL=./pages/books.html">
 </head>
 
 <body>
